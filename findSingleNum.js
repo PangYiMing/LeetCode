@@ -1,28 +1,28 @@
 // 异或
-// var singleNumber = function (nums) {
-//     let num = 0
-//     nums.forEach(el => {
-//         num ^= el
-//     });
-//     return num
-// };
+var singleNumber = function (nums) {
+    let num = 0
+    nums.forEach(el => {
+        num ^= el
+    });
+    return num
+};
 
 
 // 记次数比较好
-var singleNumber = function (nums) {
-    const obj = {}
-    nums.forEach(el => {
-        obj[el] ? obj[el] = 2 : obj[el] = 1
-    });
-    for (const key in obj) {
-        if (Object.hasOwnProperty.call(obj, key)) {
-            const el = obj[key];
-            if (el === 1) {
-                return key
-            }
-        }
-    }
-};
+// var singleNumber = function (nums) {
+//     const obj = {}
+//     nums.forEach(el => {
+//         obj[el] ? obj[el] = 2 : obj[el] = 1
+//     });
+//     for (const key in obj) {
+//         if (Object.hasOwnProperty.call(obj, key)) {
+//             const el = obj[key];
+//             if (el === 1) {
+//                 return key
+//             }
+//         }
+//     }
+// };
 
 
 
